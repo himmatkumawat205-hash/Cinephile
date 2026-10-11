@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cine Pick: 30 handpicked movies, shows and anime from CINEPHILE. Find a story worth your time.">
+  <title>Cine Pick | CINE 🎬 PHILE</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="cine-pick.css">
+</head>
+<body class="cine-pick" id="top">
+  <a class="skip-link" href="#picks">Skip to Cine Pick</a>
+
+   <!-- HEADER -->
+   <header class="header">
+
+    <a href="index.html" class="logo">
+        <span>CINE</span>
+        <span class="logo-icon">🎬</span>
+        <span>PHILE</span>
+    </a>
+
+
+    <div class="header-right">
+
+        <div class="search-box">
+
+            <span class="search-symbol">
+                ⌕
+            </span>
+
+            <input
+                type="text"
+                placeholder="Search movies, shows..."
+            >
+
+        </div>
+
+
+        <div class="profile">
+            C
+        </div>
+
+    </div>
+
+</header>
+
+
+  <div class="page-layout">
+
+    <main class="main-content" id="picks">
+      <a class="back-home" href="index.html"><span aria-hidden="true">←</span> Back to Home</a>
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">THE CINEPHILE EDIT</p>
+          <h1>Cine <span>Pick.</span></h1>
+          <p class="intro">Great movies. Unmissable shows. Anime worth the obsession.</p>
+        </div>
+        <p class="edition"><strong>30</strong><span>STORIES WORTH YOUR TIME</span></p>
+      </div>
+      <section class="pick-browser" aria-label="Browse Cine Pick recommendations">
+        
+        <fieldset class="filters">
+          <legend class="sr-only">Filter recommendations by type</legend>
+          <div class="filter-option"><input id="filter-all" name="pick-filter" type="radio" checked><label for="filter-all">All picks <span>30</span></label></div>
+          <div class="filter-option"><input id="filter-movies" name="pick-filter" type="radio"><label for="filter-movies">Movies <span>12</span></label></div>
+          <div class="filter-option"><input id="filter-shows" name="pick-filter" type="radio"><label for="filter-shows">Shows <span>09</span></label></div>
+          <div class="filter-option"><input id="filter-anime" name="pick-filter" type="radio"><label for="filter-anime">Anime <span>09</span></label></div>
+        </fieldset>
+        <div class="results-line">
+          <p class="result-count"><span class="count-all">30 handpicked titles</span><span class="count-movies">12 handpicked movies</span><span class="count-shows">9 handpicked shows</span><span class="count-anime">9 handpicked anime</span></p>
+          <p>CHOSEN FOR THE STORY. STAYED FOR THE FEELING.</p>
+        </div>
+        <div class="picks-grid">
+          
+          <details class="pick-card" id="pick-interstellar" data-type="movie">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/interstellar.webp" alt="" width="400" height="600" loading="eager" decoding="async"></span>
+              <span class="pick-title">Interstellar</span>
+              <span class="pick-meta">Movie <span aria-hidden="true">•</span> 2014</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Sci-Fi · Adventure</p>
+              <p>For a space epic that pairs enormous scale with a deeply personal story about family and time.</p>
+              <a href="https://en.wikipedia.org/wiki/Interstellar_(film)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          
+          <details class="pick-card" id="pick-breaking-bad" data-type="show">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/breaking-bad.webp" alt="" width="400" height="600" loading="eager" decoding="async"></span>
+              <span class="pick-title">Breaking Bad</span>
+              <span class="pick-meta">Show <span aria-hidden="true">•</span> 2008</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Crime · Drama</p>
+              <p>For patient character development, escalating consequences, and an exceptionally satisfying long-form crime story.</p>
+              <a href="https://en.wikipedia.org/wiki/Breaking_Bad" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          
+          <details class="pick-card" id="pick-attack-on-titan" data-type="anime">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/attack-on-titan.webp" alt="" width="400" height="600" loading="eager" decoding="async"></span>
+              <span class="pick-title">Attack on Titan</span>
+              <span class="pick-meta">Anime <span aria-hidden="true">•</span> 2013</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Action · Dark fantasy</p>
+              <p>For layered mysteries, shifting loyalties, and a story that keeps changing the way you see its world.</p>
+              <a href="https://en.wikipedia.org/wiki/Attack_on_Titan_(TV_series)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          
+          <details class="pick-card" id="pick-12th-fail" data-type="movie">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/12th-fail.webp" alt="" width="400" height="600" loading="eager" decoding="async"></span>
+              <span class="pick-title">12th Fail</span>
+              <span class="pick-meta">Movie <span aria-hidden="true">•</span> 2023</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Biography · Drama</p>
+              <p>For an earnest, moving story of perseverance that finds its strength in ordinary people and small acts of kindness.</p>
+              <a href="https://en.wikipedia.org/wiki/12th_Fail" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          
+          <details class="pick-card" id="pick-parasite" data-type="movie">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/parasite.webp" alt="" width="400" height="600" loading="eager" decoding="async"></span>
+              <span class="pick-title">Parasite</span>
+              <span class="pick-meta">Movie <span aria-hidden="true">•</span> 2019</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Thriller · Drama</p>
+              <p>For precise visual storytelling, dark humour, and a class thriller best experienced knowing as little as possible.</p>
+              <a href="https://en.wikipedia.org/wiki/Parasite_(2019_film)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-dark" data-type="show">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/dark.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Dark</span>
+              <span class="pick-meta">Show <span aria-hidden="true">•</span> 2017</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Mystery · Sci-Fi</p>
+              <p>For a meticulously connected mystery that rewards your attention. A great choice when you want to piece a puzzle together.</p>
+              <a href="https://en.wikipedia.org/wiki/Dark_(TV_series)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-frieren" data-type="anime">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/frieren.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Frieren: Beyond Journey’s End</span>
+              <span class="pick-meta">Anime <span aria-hidden="true">•</span> 2023</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Fantasy · Adventure</p>
+              <p>For a quieter fantasy journey about friendship, memory, and learning to appreciate the time you have.</p>
+              <a href="https://en.wikipedia.org/wiki/Frieren" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-shawshank" data-type="movie">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/shawshank.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">The Shawshank Redemption</span>
+              <span class="pick-meta">Movie <span aria-hidden="true">•</span> 1994</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Drama</p>
+              <p>For a timeless story of friendship and hope, built around memorable performances and a powerful emotional payoff.</p>
+              <a href="https://en.wikipedia.org/wiki/The_Shawshank_Redemption" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-severance" data-type="show">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/severance.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Severance</span>
+              <span class="pick-meta">Show <span aria-hidden="true">•</span> 2022</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Sci-Fi · Thriller</p>
+              <p>For unsettling workplace satire, striking design, and a high-concept mystery about identity and control.</p>
+              <a href="https://en.wikipedia.org/wiki/Severance_(TV_series)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-fmab" data-type="anime">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/fmab.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Fullmetal Alchemist: Brotherhood</span>
+              <span class="pick-meta">Anime <span aria-hidden="true">•</span> 2009</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Fantasy · Adventure</p>
+              <p>For a complete adventure with a rich ensemble, inventive world-building, and real emotional stakes.</p>
+              <a href="https://en.wikipedia.org/wiki/Fullmetal_Alchemist:_Brotherhood" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-inception" data-type="movie">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/inception.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Inception</span>
+              <span class="pick-meta">Movie <span aria-hidden="true">•</span> 2010</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Sci-Fi · Thriller</p>
+              <p>For a cleverly constructed dream heist with big action, a memorable score, and plenty to discuss afterwards.</p>
+              <a href="https://en.wikipedia.org/wiki/Inception" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-3-idiots" data-type="movie">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/3-idiots.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">3 Idiots</span>
+              <span class="pick-meta">Movie <span aria-hidden="true">•</span> 2009</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Comedy · Drama</p>
+              <p>For a funny, warm-hearted story about friendship, ambition, and finding a path beyond other people’s expectations.</p>
+              <a href="https://en.wikipedia.org/wiki/3_Idiots" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-better-call-saul" data-type="show">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/better-call-saul.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Better Call Saul</span>
+              <span class="pick-meta">Show <span aria-hidden="true">•</span> 2015</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Crime · Drama</p>
+              <p>For subtle performances and the carefully observed choices that turn a charming underdog into someone else.</p>
+              <a href="https://en.wikipedia.org/wiki/Better_Call_Saul" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-death-note" data-type="anime">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/death-note.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Death Note</span>
+              <span class="pick-meta">Anime <span aria-hidden="true">•</span> 2006</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Psychological · Thriller</p>
+              <p>For a gripping battle of wits with a simple premise and increasingly complicated moral consequences.</p>
+              <a href="https://en.wikipedia.org/wiki/Death_Note" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-whiplash" data-type="movie">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/whiplash.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Whiplash</span>
+              <span class="pick-meta">Movie <span aria-hidden="true">•</span> 2014</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Drama · Music</p>
+              <p>For a fiercely performed, tightly edited drama that turns musical ambition into edge-of-your-seat tension.</p>
+              <a href="https://en.wikipedia.org/wiki/Whiplash_(2014_film)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-shogun" data-type="show">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/shogun.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Shōgun</span>
+              <span class="pick-meta">Show <span aria-hidden="true">•</span> 2024</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Historical · Drama</p>
+              <p>For intricate political manoeuvring, vivid period detail, and characters negotiating power across cultures.</p>
+              <a href="https://en.wikipedia.org/wiki/Sh%C5%8Dgun_(2024_TV_series)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-vinland-saga" data-type="anime">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/vinland-saga.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Vinland Saga</span>
+              <span class="pick-meta">Anime <span aria-hidden="true">•</span> 2019</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Historical · Adventure</p>
+              <p>For a Viking-era story that grows from revenge into a thoughtful exploration of violence and personal change.</p>
+              <a href="https://en.wikipedia.org/wiki/Vinland_Saga_(TV_series)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-the-dark-knight" data-type="movie">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/the-dark-knight.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">The Dark Knight</span>
+              <span class="pick-meta">Movie <span aria-hidden="true">•</span> 2008</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Crime · Action</p>
+              <p>For a superhero film shaped like a crime epic, with memorable performances and difficult moral choices.</p>
+              <a href="https://en.wikipedia.org/wiki/The_Dark_Knight" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-chernobyl" data-type="show">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/chernobyl.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Chernobyl</span>
+              <span class="pick-meta">Show <span aria-hidden="true">•</span> 2019</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Historical · Drama</p>
+              <p>For an intense, carefully crafted dramatisation of a disaster and the institutional failures surrounding it.</p>
+              <a href="https://en.wikipedia.org/wiki/Chernobyl_(miniseries)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-spirited-away" data-type="anime">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/spirited-away.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Spirited Away</span>
+              <span class="pick-meta">Anime <span aria-hidden="true">•</span> 2001</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Fantasy · Film</p>
+              <p>For an imaginative animated film filled with extraordinary creatures, quiet wonder, and a brave young heroine.</p>
+              <a href="https://en.wikipedia.org/wiki/Spirited_Away" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-tumbbad" data-type="movie">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/tumbbad.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Tumbbad</span>
+              <span class="pick-meta">Movie <span aria-hidden="true">•</span> 2018</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Horror · Fantasy</p>
+              <p>For atmospheric Indian folk horror, striking production design, and a haunting tale of greed.</p>
+              <a href="https://en.wikipedia.org/wiki/Tumbbad" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-the-bear" data-type="show">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/the-bear.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">The Bear</span>
+              <span class="pick-meta">Show <span aria-hidden="true">•</span> 2022</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Comedy · Drama</p>
+              <p>For the messy humanity behind a restaurant: intense kitchens, complicated families, and people trying to do better.</p>
+              <a href="https://en.wikipedia.org/wiki/The_Bear_(TV_series)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-steins-gate" data-type="anime">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/steins-gate.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Steins;Gate</span>
+              <span class="pick-meta">Anime <span aria-hidden="true">•</span> 2011</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Sci-Fi · Thriller</p>
+              <p>For a time-travel story whose playful opening builds into an emotionally rewarding and carefully plotted thriller.</p>
+              <a href="https://en.wikipedia.org/wiki/Steins%3BGate_(TV_series)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-drishyam" data-type="movie">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/drishyam.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Drishyam</span>
+              <span class="pick-meta">Movie <span aria-hidden="true">•</span> 2013</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Crime · Thriller</p>
+              <p>For a Malayalam family thriller that makes ordinary details matter. Go in without spoilers.</p>
+              <a href="https://en.wikipedia.org/wiki/Drishyam" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-succession" data-type="show">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/succession.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Succession</span>
+              <span class="pick-meta">Show <span aria-hidden="true">•</span> 2018</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Drama · Satire</p>
+              <p>For sharp dialogue, uncomfortable comedy, and a compelling portrait of a family locked in a struggle for power.</p>
+              <a href="https://en.wikipedia.org/wiki/Succession_(TV_series)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-monster" data-type="anime">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/monster.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Monster</span>
+              <span class="pick-meta">Anime <span aria-hidden="true">•</span> 2004</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Psychological · Mystery</p>
+              <p>For a slow-burning psychological mystery that takes its characters and moral questions seriously.</p>
+              <a href="https://en.wikipedia.org/wiki/Monster_(manga)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-the-prestige" data-type="movie">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/the-prestige.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">The Prestige</span>
+              <span class="pick-meta">Movie <span aria-hidden="true">•</span> 2006</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Mystery · Drama</p>
+              <p>For a richly layered rivalry between two magicians, where obsession matters as much as the tricks.</p>
+              <a href="https://en.wikipedia.org/wiki/The_Prestige_(film)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-the-family-man" data-type="show">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/the-family-man.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">The Family Man</span>
+              <span class="pick-meta">Show <span aria-hidden="true">•</span> 2019</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Action · Thriller</p>
+              <p>For an Indian espionage series that balances tense missions with the everyday pressures of family life.</p>
+              <a href="https://en.wikipedia.org/wiki/The_Family_Man_(Indian_TV_series)" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-your-name" data-type="anime">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/your-name.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">Your Name</span>
+              <span class="pick-meta">Anime <span aria-hidden="true">•</span> 2016</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Romance · Fantasy film</p>
+              <p>For a visually beautiful animated film that turns an unexpected connection into a sweeping emotional journey.</p>
+              <a href="https://en.wikipedia.org/wiki/Your_Name" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+
+          <details class="pick-card" id="pick-the-lunchbox" data-type="movie">
+            <summary>
+              <span class="poster"><img src="cine-pick-assets/the-lunchbox.webp" alt="" width="400" height="600" loading="lazy" decoding="async"></span>
+              <span class="pick-title">The Lunchbox</span>
+              <span class="pick-meta">Movie <span aria-hidden="true">•</span> 2013</span>
+              <span class="pick-hint">Why this pick? <span class="plus" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="pick-note">
+              <p class="genre">Romance · Drama</p>
+              <p>For an intimate, gentle story about loneliness and connection, carried by wonderfully understated performances.</p>
+              <a href="https://en.wikipedia.org/wiki/The_Lunchbox" target="_blank" rel="noopener noreferrer">About this title <span aria-hidden="true">↗</span><span class="sr-only"> on Wikipedia, opens in a new tab</span></a>
+            </div>
+          </details>
+        </div>
+      </section>
+      <p class="curation-note">A selection of our favourites, not a ranking. Years refer to the original film release or series premiere. Anime includes both films and series.</p>
+    </main>
+    
+    <!-- === SIDEBAR === -->
+
+<aside class="sidebar">
+
+    <div class="sidebar-title">
+        MENU
+    </div>
+
+    <nav class="sidebar-menu">
+
+        <a href="index.html" >
+            Explore
+        </a>
+
+        <a href="collection.html" >
+            Collection
+        </a>
+
+        <a href="genre.html" >
+            Genre
+        </a>
+
+        <a href="cine-pick.html" class="active">
+            Cine Pick
+        </a>
+
+        <a href="top-imdb.html">
+            Top IMDb Rated
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-divider"></div>
+
+
+    <!-- === FEATURED MOVIE === -->
+
+    <div class="featured-title">
+        Featured
+    </div>
+
+
+    <div class="featured-card">
+
+        <a href="details18.html">
+
+        <div class="featured-poster">
+
+            <img
+                src="images/featured.jpg"
+                alt="Featured Movie"
+            >
+
+            <span class="featured-rating">
+                ★ 8.4
+            </span>
+
+        </div>
+
+
+        <div class="featured-content">
+
+            <span class="featured-label">
+                MOVIE OF THE MONTH
+            </span>
+
+            <h3>
+                The Odyssey
+            </h3>
+
+            <div class="featured-meta">
+                <span>2026</span>
+                <span>•</span>
+                <span>Action</span>
+                <span>•</span>
+                <span>2h 18m</span>
+            </div>
+
+            <p>
+                Discover one of the most popular movies
+                trending this month.
+            </p>
+
+            <a href="details18.html" class="featured-button">
+                View Details
+            </a>
+
+        </div>
+
+    </div>
+
+ </aside>
+
+  </div>
+  <footer class="site-footer">
+
+
+          <div class="footer-bottom">
+
+               <p>
+                  © 2026 CINE 🎬 PHILE. All Rights Reserved.
+              </p>
+
+
+        <nav class="footer-links">
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="privacy.html">
+                Privacy Policy
+            </a>
+
+            <a href="terms.html">
+                Terms of Service
+            </a>
+
+            <a href="contact.html">
+                Contact Us
+            </a>
+
+        </nav>
+
+    </div>
+
+  </footer>
+
+
+</body>
+</html>

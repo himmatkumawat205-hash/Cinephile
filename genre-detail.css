@@ -1,0 +1,65 @@
+/* Category content: native HTML controls + CSS, with no scripts. */
+.detail-intro h1 { font-size: clamp(48px, 5.5vw, 78px); }
+.collection-meta { margin-top: 20px; color: #c7b4d6; font-size: 9px; letter-spacing: 1.3px; line-height: 1.8; }
+.collection-meta span { padding: 0 8px; color: #81559e; }
+.catalogue { padding-top: 36px; }
+.type-filters { display: flex; gap: 6px; padding: 5px; width: fit-content; max-width: 100%; background: #121017; border: 1px solid #3d3049; border-radius: 11px; margin-bottom: 18px; min-inline-size: 0; }
+.filter-option { position: relative; }
+.filter-option input { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.filter-option label { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 19px; border-radius: 7px; font-size: 12px; font-weight: 600; color: #c1b4cd; cursor: pointer; }
+.filter-option label span { font-size: 10px; padding: 3px 6px; border-radius: 4px; background: #ffffff0b; }
+.filter-option label:hover { background: #ffffff0b; color: white; }
+.filter-option input:checked + label { background: #7436a8; color: white; box-shadow: 0 2px 12px #5a228438; }
+.filter-option input:checked + label span { background: #ffffff17; }
+.filter-option input:focus-visible + label { outline: 2px solid #e0bbff; outline-offset: 3px; }
+.results-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; border-top: 1px solid #2c2335; padding: 16px 0 22px; color: #b6a9c2; font-size: 11px; line-height: 1.6; }
+.results-toolbar > p:last-child { text-align: right; }
+.result-count .count-movie, .result-count .count-show, .result-count .count-anime { display: none; }
+.catalogue:has(#filter-movie:checked) .title-card:not([data-type="movie"]),
+.catalogue:has(#filter-show:checked) .title-card:not([data-type="show"]),
+.catalogue:has(#filter-anime:checked) .title-card:not([data-type="anime"]) { display: none; }
+.catalogue:has(#filter-movie:checked, #filter-show:checked, #filter-anime:checked) .count-all { display: none; }
+.catalogue:has(#filter-movie:checked) .count-movie,
+.catalogue:has(#filter-show:checked) .count-show,
+.catalogue:has(#filter-anime:checked) .count-anime { display: inline; }
+.titles-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 22px; }
+.title-card { min-width: 0; }
+.title-link { display: block; border-radius: 9px; }
+.title-poster { display: block; position: relative; aspect-ratio: 2/3; overflow: hidden; border-radius: 9px; background: #21172a; border: 1px solid #45354f; }
+.title-poster::after { content: ''; position: absolute; inset: 50% 0 0; background: linear-gradient(transparent, #08080b8c); pointer-events: none; }
+.title-poster img { display: block; height: 100%; width: 100%; object-fit: cover; transition: transform .3s; }
+.title-link:hover .title-poster img { transform: scale(1.035); }
+.title-link:hover h3, .title-link:hover .wiki-link { color: #e3bdff; }
+.type-badge { position: absolute; bottom: 12px; left: 12px; z-index: 1; padding: 6px 9px; font-size: 10px; font-weight: 700; letter-spacing: .6px; color: #f5e9ff; background: #372244f2; border: 1px solid #d2a2ff60; border-radius: 4px; }
+.type-badge.show { color: #d7efff; background: #142f49f2; border-color: #76acd960; }
+.type-badge.anime { color: #fff0d9; background: #493122f2; border-color: #d9b17660; }
+.poster-arrow { position: absolute; right: 12px; top: 12px; display: grid; place-items: center; width: 30px; height: 30px; border: 1px solid #ffffff50; border-radius: 50%; background: #100c18aa; color: white; font-size: 18px; }
+.title-card h3 { font-size: 16px; line-height: 1.45; margin: 14px 0 6px; font-weight: 600; overflow-wrap: anywhere; }
+.title-meta { display: block; font-size: 11px; line-height: 1.7; color: #b8a9c4; }
+.title-meta > span { padding: 0 6px; }
+.wiki-link { display: flex; align-items: center; gap: 12px; width: fit-content; margin-top: 12px; color: #c59ce7; font-size: 11px; padding-bottom: 5px; border-bottom: 1px solid #79599170; }
+.more-genres { margin-top: 42px; padding-top: 28px; border-top: 1px solid var(--line); }
+.genre-links { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 20px; }
+.genre-links a { display: inline-flex; align-items: center; min-height: 40px; padding: 10px 15px; border-radius: 24px; border: 1px solid #43324e; color: #c5b6d0; background: #15101a; font-size: 12px; }
+.genre-links a:hover, .genre-links a.current { color: #ebd3ff; border-color: #a47ac5; background: #49285b60; }
+.back-top { display: inline-flex; padding: 12px 0; margin-top: 15px; color: #b8a5c6; font-size: 11px; }
+@media (max-width: 1000px) {
+ .titles-grid { gap: 28px 16px; }
+ .title-card h3 { font-size: 14px; }
+}
+@media (max-width: 600px) {
+ .titles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 14px; }
+ .type-filters { width: 100%; gap: 2px; padding: 4px; }
+ .filter-option { flex: 1; min-width: 0; }
+ .filter-option label { gap: 5px; padding: 12px 4px; font-size: 11px; }
+ .filter-option label span { padding: 2px 4px; font-size: 9px; }
+ .results-toolbar { font-size: 10px; align-items: flex-start; }
+ .results-toolbar > p:last-child { max-width: 160px; }
+ .type-badge { left: 8px; bottom: 8px; font-size: 9px; padding: 5px 7px; }
+ .title-card h3 { font-size: 13px; }
+ .title-meta, .wiki-link { font-size: 10px; }
+ .poster-arrow { right: 8px; top: 8px; width: 26px; height: 26px; font-size: 16px; }
+ .collection-meta { letter-spacing: .5px; font-size: 8px; }
+ .collection-meta span { padding: 0 3px; }
+ .detail-intro h1 { font-size: clamp(28px, 8.3vw, 38px); }
+}

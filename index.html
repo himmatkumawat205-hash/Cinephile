@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cinephile</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loading.css">
+</head>
+
+
+<body>
+
+    
+    <div class="cine-loader" id="cine-loader" hidden>
+        <div class="cine-loader__frame" aria-hidden="true"></div>
+        <div class="cine-loader__topline" aria-hidden="true">
+            <span>A WORLD OF STORIES</span>
+            <span class="cine-loader__edition">EST. 2026</span>
+        </div>
+
+        <div class="cine-loader__content">
+            <p class="cine-loader__eyebrow" aria-hidden="true">FOR THE LOVE OF CINEMA</p>
+            <div class="cine-loader__wordmark" aria-hidden="true">
+                <span class="cine-loader__word cine-loader__word--first">CINE</span>
+                <svg class="cine-loader__mark" viewBox="0 0 80 86" fill="none" focusable="false">
+                    <g class="cine-loader__clap">
+                        <path d="M12 27 66 13l4 15-54 14z" fill="currentColor"/>
+                        <path d="m23 24 10 13m8-18 10 13m8-18 9 12" stroke="#100c16" stroke-width="7"/>
+                    </g>
+                    <path d="M14 41h56v30a6 6 0 0 1-6 6H20a6 6 0 0 1-6-6V41Z" stroke="currentColor" stroke-width="3"/>
+                    <path d="m36 51 14 8-14 8V51Z" fill="currentColor"/>
+                </svg>
+                <span class="cine-loader__word cine-loader__word--last">PHILE</span>
+            </div>
+            <p class="cine-loader__tagline">Every story starts here.</p>
+
+            <div class="cine-loader__loading" role="status" aria-live="polite">
+                <div class="cine-loader__track" aria-hidden="true"><span></span></div>
+                <p class="cine-loader__status"><span class="cine-loader__dot" aria-hidden="true"></span>Loading Cinephile<span aria-hidden="true">...</span></p>
+            </div>
+        </div>
+
+        <div class="cine-loader__bottomline">
+            <span class="cine-loader__categories" aria-hidden="true">MOVIES <i></i> SHOWS <i></i> ANIME</span>
+            <button class="cine-loader__skip" id="cine-loader-skip" type="button">Skip intro <span aria-hidden="true">↗</span></button>
+        </div>
+    </div>
+    <script src="loading.js"></script>
+
+    <div id="site-content">
+
+    <!-- HEADER -->
+   <header class="header">
+
+    <a href="index.html" class="logo">
+        <span>CINE</span>
+        <span class="logo-icon">🎬</span>
+        <span>PHILE</span>
+    </a>
+
+
+    <div class="header-right">
+
+        <div class="search-box">
+
+            <span class="search-symbol">
+                ⌕
+            </span>
+
+            <input
+                type="text"
+                placeholder="Search movies, shows..."
+            >
+
+        </div>
+
+
+        <div class="profile">
+            C
+        </div>
+
+    </div>
+
+</header>
+
+
+    <!-- PAGE -->
+    <div class="page-layout">
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+
+            <!-- TRENDING -->
+           <section class="content-section">
+
+    <div class="section-heading">
+
+        <h2>🔥 Trending Stuff</h2>
+
+        <a href="#">View All</a>
+
+    </div>
+
+    <div class="movie-grid trending-grid">
+
+        <div class="movie-card">
+
+        <a href="details.html">
+
+    <div class="poster">
+
+        <img src="images/trending1.jpg" alt="Trending Show">
+
+        <span class="status-badge">
+            TOP PICK
+        </span>
+
+        <span class="rating-badge">
+            ★ 7.2
+        </span>
+
+        <a href="details.html" class="info-btn">
+            i
+        </a>
+
+    </div>
+
+    <h3>Primetime</h3>
+
+    <div class="movie-meta">
+        <span>2026</span>
+        <span>•</span>
+        <span>New Movie</span>
+    </div>
+
+</div>
+        
+<div class="movie-card">
+       
+    <a href="details1.html">
+    <div class="poster">
+
+        <img src="images/trending2.jpg" alt="Trending Movie">
+
+        <span class="status-badge">
+            TRENDING
+        </span>
+
+        <span class="rating-badge">
+            ★ 7.8
+        </span>
+
+        <a href="details1.html" class="info-btn">i</a>
+
+    </div>
+
+    <h3>Lanterns</h3>
+
+    <div class="movie-meta">
+
+        <span>Season Finale</span>
+
+    </div>
+
+</div>
+        
+<div class="movie-card">
+        
+    <a href="details2.html">
+
+    <div class="poster">
+
+        <img src="images/trending3.jpg" alt="Trending Movie">
+
+        <span class="status-badge">
+            Trending
+        </span>
+
+        <span class="rating-badge">
+            ★ 8.4
+        </span>
+
+        <a href="details2.html" class="info-btn">i</a>
+
+    </div>
+
+    <h3>Avengers: Endgame </h3>
+
+    <div class="movie-meta">
+        <span>Encore Re-Release</span>
+        <span>•</span>
+        <span>Action</span>
+    </div>
+
+</div>
+        
+<div class="movie-card">
+
+     <a href="details3.html">
+
+    <div class="poster">
+
+        <img src="images/trending4.jpg" alt="Trending Movie">
+
+        <span class="status-badge">
+            HOT
+        </span>
+
+        <span class="rating-badge">
+            ★ 7.6
+        </span>
+
+        <a href="details3.html" class="info-btn">i</a>
+
+    </div>
+
+    <h3>Resident Evil</h3>
+
+    <div class="movie-meta">
+        <span>2026</span>
+        <span>•</span>
+        <span>New Movie</span>
+    </div>
+
+</div>
+        
+<div class="movie-card">
+
+    <a href="details4.html">
+
+    <div class="poster">
+
+        <img src="images/trending5.jpg" alt="Trending Movie">
+
+        <span class="status-badge">
+            TRENDING
+        </span>
+
+        <span class="rating-badge">
+            ★ 7.9
+        </span>
+
+        <a href="details4.html" class="info-btn">i</a>
+
+    </div>
+
+    <h3>Drishyam: The Conclusion</h3>
+
+    <div class="movie-meta">
+        <span>2026</span>
+        <span>•</span>
+        <span>New Movie</span>
+    </div>
+
+</div>
+    </div>
+
+</section>
+
+           <!-- === NEW MOVIES === -->
+
+<section class="content-section new-movies-section">
+
+    <div class="section-heading">
+
+        <h2>🎬 New Movies</h2>
+
+        <a href="#">View All</a>
+
+    </div>
+
+
+    <div class="new-movies-grid">
+
+
+        <!-- MOVIE 1 -->
+
+        <div class="movie-card">
+
+            <a href="details4.html">
+
+            <div class="poster">
+
+                <img
+                    src="images/newmovie1.jpg"
+                    alt="New Movie"
+                >
+
+                <span class="new-badge">
+                    NEW
+                </span>
+
+                <span class="rating-badge">
+                    ★ 7.9
+                </span>
+
+                <a href="details4.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>Drishyam: The Conclusion</h3>
+
+            <div class="movie-meta">
+
+                <span>2026</span>
+
+                <span>•</span>
+
+                <span>Mystery</span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MOVIE 2 -->
+
+        <div class="movie-card">
+
+            <a href="details5.html">
+
+            <div class="poster">
+
+                <img
+                    src="images/newmovie2.jpg"
+                    alt="New Movie"
+                >
+
+                <span class="new-badge">
+                    NEW
+                </span>
+
+                <span class="rating-badge">
+                    ★ 7.3
+                </span>
+
+                <a href="details5.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>Heart Of The Beast</h3>
+
+            <div class="movie-meta">
+
+                <span>2026</span>
+
+                <span>•</span>
+
+                <span>Survival</span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MOVIE 3 -->
+
+        <div class="movie-card">
+
+            <a href="details6.html">
+
+            <div class="poster">
+
+                <img
+                    src="images/newmovie3.jpg"
+                    alt="New Movie"
+                >
+
+                <span class="new-badge">
+                    NEW
+                </span>
+
+                <span class="rating-badge">
+                    ★ 6.8
+                </span>
+
+                <a href="details6.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>Hope</h3>
+
+            <div class="movie-meta">
+
+                <span>2026</span>
+
+                <span>•</span>
+
+                <span>Action</span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MOVIE 4 -->
+
+        <div class="movie-card">
+
+            <a href="details7.html">
+
+            <div class="poster">
+
+                <img
+                    src="images/newmovie4.jpg"
+                    alt="New Movie"
+                >
+
+                <span class="new-badge">
+                    NEW
+                </span>
+
+                <span class="rating-badge">
+                    ★ 7.0
+                </span>
+
+                <a href="details7.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>The Paradise</h3>
+
+            <div class="movie-meta">
+
+                <span>2026</span>
+
+                <span>•</span>
+
+                <span>Action</span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MOVIE 5 -->
+
+        <div class="movie-card">
+
+            <a href="details8.html">
+
+            <div class="poster">
+
+                <img
+                    src="images/newmovie5.jpg"
+                    alt="New Movie"
+                >
+
+                <span class="new-badge">
+                    NEW
+                </span>
+
+                <span class="rating-badge">
+                    ★ 6.5
+                </span>
+
+                <a href="details8.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>The Vvaan</h3>
+
+            <div class="movie-meta">
+
+                <span>2026</span>
+
+                <span>•</span>
+
+                <span>Adventure</span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+            
+
+           
+   <!-- ===NEW SHOWS === -->
+
+<section class="content-section new-shows-section">
+
+    <div class="section-heading">
+
+        <h2>📺 New Shows</h2>
+
+        <a href="#">View All</a>
+
+    </div>
+
+
+    <div class="new-shows-grid">
+
+
+        <!-- SHOW 1 -->
+
+        <div class="movie-card show-card">
+
+            <a href="details1.html">
+
+            <div class="poster">
+
+                <img src="images/show1.jpg" alt="New Show">
+
+                <span class="show-badge">
+                    NEW
+                </span>
+
+                <span class="rating-badge">
+                    ★ 7.8
+                </span>
+
+                <a href="details1.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>Lanterns</h3>
+
+            <div class="show-meta">
+
+                <span>Season 1</span>
+                <span>•</span>
+                <span>8 Episodes</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- SHOW 2 -->
+
+        <div class="movie-card show-card">
+
+            <a href="details9.html">
+
+            <div class="poster">
+
+                <img src="images/show2.jpg" alt="New Show">
+
+                <span class="show-badge">
+                    SERIES
+                </span>
+
+                <span class="rating-badge">
+                    ★ 6.7
+                </span>
+
+                <a href="details9.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>Hunkkaar: The Roar</h3>
+
+            <div class="show-meta">
+
+                <span>Season 1</span>
+                <span>•</span>
+                <span>6 Episodes</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- SHOW 3 -->
+
+        <div class="movie-card show-card">
+
+            <a href="details10.html">
+
+            <div class="poster">
+
+                <img src="images/show3.jpg" alt="New Show">
+
+                <span class="show-badge">
+                    NEW
+                </span>
+
+                <span class="rating-badge">
+                    ★ 7.7
+                </span>
+
+                <a href="details10.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>Monster: The Lizzie Borden Story</h3>
+
+            <div class="show-meta">
+
+                <span>Season 1</span>
+                <span>•</span>
+                <span>8 Episodes</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- SHOW 4 -->
+
+        <div class="movie-card show-card">
+
+            <a href="details11.html">
+
+            <div class="poster">
+
+                <img src="images/show4.jpg" alt="New Show">
+
+                <span class="show-badge">
+                    NEW
+                </span>
+
+                <span class="rating-badge">
+                    ★ 7.8
+                </span>
+
+                <a href="details11.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>The Revolutionaries</h3>
+
+            <div class="show-meta">
+
+                <span>Season 1</span>
+                <span>•</span>
+                <span>8 Episodes</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- SHOW 5 -->
+
+        <div class="movie-card show-card">
+
+            <a href="details12.html">
+
+            <div class="poster">
+
+                <img src="images/show5.jpg" alt="New Show">
+
+                <span class="show-badge">
+                    NEW 
+                </span>
+
+                <span class="rating-badge">
+                    ★ 6.3
+                </span>
+
+                <a href="details12.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>Brothers</h3>
+
+            <div class="show-meta">
+
+                <span>Season 1 </span>
+                <span>•</span>
+                <span>8 Episodes</span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+            
+<!-- === UPCOMING ENTERTAINMENT ===-->
+
+<section class="content-section upcoming-section">
+
+    <div class="section-heading">
+
+        <h2>📅 Upcoming Entertainment</h2>
+
+        <a href="#">View All</a>
+
+    </div>
+
+
+    <div class="upcoming-grid">
+
+
+        <!-- UPCOMING 1 -->
+
+        <div class="movie-card upcoming-card">
+
+            <a href="details13.html">
+
+            <div class="poster">
+
+                <img
+                    src="images/upcoming1.jpg"
+                    alt="Upcoming Movie"
+                >
+
+                <div class="release-date">
+                    <span class="release-day">18</span>
+                    <span class="release-month">DEC</span>
+                </div>
+
+                <span class="upcoming-badge">
+                    UPCOMING
+                </span>
+
+                <a href="details13.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>Avengers Doomsday</h3>
+
+            <div class="upcoming-meta">
+                <span>2026</span>
+                <span>•</span>
+                <span>Action</span>
+            </div>
+
+        </div>
+
+
+        <!-- UPCOMING 2 -->
+
+        <div class="movie-card upcoming-card">
+
+            <a href="details14.html">
+
+            <div class="poster">
+
+                <img
+                    src="images/upcoming2.jpg"
+                    alt="Upcoming Movie"
+                >
+
+                <div class="release-date">
+                    <span class="release-day">06</span>
+                    <span class="release-month">NOV</span>
+                </div>
+
+                <span class="upcoming-badge">
+                    UPCOMING
+                </span>
+
+                <a href="details14.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>Ramayana: Part One</h3>
+
+            <div class="upcoming-meta">
+                <span>2026</span>
+                <span>•</span>
+                <span>Spiritual</span>
+            </div>
+
+        </div>
+
+
+        <!-- UPCOMING 3 -->
+
+        <div class="movie-card upcoming-card">
+
+            <a href="details15.html">
+
+            <div class="poster">
+
+                <img
+                    src="images/upcoming3.jpg"
+                    alt="Upcoming Show"
+                >
+
+                <div class="release-date">
+                    <span class="release-day">25</span>
+                    <span class="release-month">DEC</span>
+                </div>
+
+                <span class="upcoming-badge">
+                    UPCOMING
+                </span>
+
+                <a href="details15.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>Harry Potter</h3>
+
+            <div class="upcoming-meta">
+                <span>2026</span>
+                <span>•</span>
+                <span>Show</span>
+            </div>
+
+        </div>
+
+
+        <!-- UPCOMING 4 -->
+
+        <div class="movie-card upcoming-card">
+
+            <a href="details16.html">
+
+            <div class="poster">
+
+                <img
+                    src="images/upcoming4.jpg"
+                    alt="Upcoming Movie"
+                >
+
+                <div class="release-date">
+                    <span class="release-day">18</span>
+                    <span class="release-month">DEC</span>
+                </div>
+
+                <span class="upcoming-badge">
+                    UPCOMING
+                </span>
+
+                <a href="details16.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>Dune: Part Three</h3>
+
+            <div class="upcoming-meta">
+                <span>2026</span>
+                <span>•</span>
+                <span>Sci-Fi</span>
+            </div>
+
+        </div>
+
+
+        <!-- UPCOMING 5 -->
+
+        <div class="movie-card upcoming-card">
+
+            <a href="details17.html">
+
+            <div class="poster">
+
+                <img
+                    src="images/upcoming5.jpg"
+                    alt="Upcoming Movie"
+                >
+
+                <div class="release-date">
+                    <span class="release-day">24</span>
+                    <span class="release-month">DEC</span>
+                </div>
+
+                <span class="upcoming-badge">
+                    COMING SOON
+                </span>
+
+                <a href="details17.html" class="info-btn">
+                    i
+                </a>
+
+            </div>
+
+            <h3>King</h3>
+
+            <div class="upcoming-meta">
+                <span>2026</span>
+                <span>•</span>
+                <span>Action</span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+</main>
+        
+<!-- === SIDEBAR === -->
+
+<aside class="sidebar">
+
+    <div class="sidebar-title">
+        MENU
+    </div>
+
+    <nav class="sidebar-menu">
+
+        <a href="index.html" class="active">
+            Explore
+        </a>
+
+        <a href="collection.html">
+            Collection
+        </a>
+
+        <a href="genre.html">
+            Genre
+        </a>
+
+        <a href="cine-pick.html">
+            Cine Pick
+        </a>
+
+        <a href="top-imdb.html">
+            Top IMDb Rated
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-divider"></div>
+
+
+    <!-- === FEATURED MOVIE === -->
+
+    <div class="featured-title">
+        Featured
+    </div>
+
+
+    <div class="featured-card">
+
+        <a href="details18.html">
+
+        <div class="featured-poster">
+
+            <img
+                src="images/featured.jpg"
+                alt="Featured Movie"
+            >
+
+            <span class="featured-rating">
+                ★ 8.4
+            </span>
+
+        </div>
+
+
+        <div class="featured-content">
+
+            <span class="featured-label">
+                MOVIE OF THE MONTH
+            </span>
+
+            <h3>
+                The Odyssey
+            </h3>
+
+            <div class="featured-meta">
+                <span>2026</span>
+                <span>•</span>
+                <span>Action</span>
+                <span>•</span>
+                <span>2h 55m</span>
+            </div>
+
+            <p>
+                Discover one of the most popular movies
+                trending this month.
+            </p>
+
+            <a href="details18.html" class="featured-button">
+                View Details
+            </a>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+   <footer class="site-footer">
+
+    <!-- TOP FOOTER ROW -->
+
+    <div class="footer-top">
+
+        <div class="footer-left">
+            <p class="made-india">
+                Made with ❤️ in India
+            </p>
+        </div>
+
+
+        <div class="footer-socials">
+
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Discord">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+
+            <a href="#" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="#" aria-label="Reddit">
+                <i class="fa-brands fa-reddit-alien"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-divider"></div>
+
+
+    <!-- BOTTOM FOOTER ROW -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 CINE 🎬 PHILE. All Rights Reserved.
+        </p>
+
+
+        <nav class="footer-links">
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="privacy.html">
+                Privacy Policy
+            </a>
+
+            <a href="terms.html">
+                Terms of Service
+            </a>
+
+            <a href="contact.html">
+                Contact Us
+            </a>
+
+        </nav>
+
+    </div>
+
+</footer>
+
+
+    </div>
+    </div>
+</body>
+
+</html>
